@@ -27,7 +27,6 @@ class SummaryItem extends StatelessWidget {
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              //TODO: remove and look
               children: [
                 Text(
                   itemData['question'] as String,
@@ -39,13 +38,13 @@ class SummaryItem extends StatelessWidget {
                 const SizedBox(height: 5),
                 Text(
                   itemData['user_answer'] as String,
-                  style:
-                      const TextStyle(color: Color.fromARGB(255, 202, 171, 252)),
+                  style: const TextStyle(
+                      color: Color.fromARGB(255, 202, 171, 252)),
                 ),
                 const SizedBox(height: 5),
                 Text(itemData['correct_answer'] as String,
                     style: GoogleFonts.lato(
-                      color: Color.fromARGB(255, 181, 254, 246),
+                      color: const Color.fromARGB(255, 181, 254, 246),
                     )),
               ],
             ),
